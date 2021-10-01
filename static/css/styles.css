@@ -1,0 +1,57 @@
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/nav.css";
+@import "components/menu-bar.css";
+
+/* Screens */
+@import "screens/door.css";
+@import "screens/regions.css";
+@import "screens/cat-list.css";
+@import "screens/login.css";
+
+/* font */
+@font-face {
+  font-family: "SEBANG_Gothic_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SEBANG_Gothic_Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: abster;
+  src: url(font/abster-webfont.woff) format("woff");
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  color: inherit;
+}
+
+a:hover {
+  color: darkslategray;
+  font-weight: bold;
+}

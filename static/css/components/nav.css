@@ -1,0 +1,43 @@
+.nav-bar {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+}
+
+.nav-bar-box {
+  position: relative;
+}
+
+.nav-bar__list {
+  display: flex;
+  position: absolute;
+  right: 60px;
+  margin-top: 30px;
+}
+
+.nav-bar__list-2 {
+  display: flex;
+  position: absolute;
+  right: 60px;
+  top: 65px;
+}
+
+.nav-bar__list li {
+  margin-left: 30px;
+  list-style: none;
+}
+
+.nav-bar__list a {
+  font-size: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.nav-bar__list-2 a {
+  font-size: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px gray;
+}

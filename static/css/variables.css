@@ -1,0 +1,9 @@
+:root {
+  --hover-text: #9e1e3a;
+  --hover-bg: #e0b188;
+
+  --main-color: darkslategray;
+  --bg-color: rgba(99, 143, 143, 0.3);
+
+  --menu-color: rgba(48, 80, 80, 0.3);
+}
