@@ -10,6 +10,9 @@
 @import "screens/regions.css";
 @import "screens/cat-list.css";
 @import "screens/login.css";
+@import "screens/cat_test.css";
+@import "screens/cat_test1.css";
+@import "screens/join.css";
 
 /* font */
 @font-face {
