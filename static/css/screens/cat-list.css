@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   top: 120px;
   left: 250px;
-  width: 100vw;
+  width: 95vw;
   height: 100vh;
 }
 
@@ -19,7 +19,7 @@
   box-shadow: 2px 2px 2px gray;
   overflow: hidden;
   cursor: pointer;
-  margin: 10px;
+  margin: 0px 10px 10px 10px;
 }
 
 .card-img-top {
@@ -31,4 +31,9 @@
 .card-text {
   text-align: center;
   font-size: 14px;
+}
+
+/* 모달창 */
+
+.modal {
 }
