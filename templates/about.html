@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데려갈꼬냥? | ABOUT US</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"> 
+    </script>
+    <!-- jQuery -->
+    <script src="jquery-3.4.1.min.js"></script>
+
+</head>
+</script>
+<!-- Background -->
+<style>
+    body {
+        background: linear-gradient(var(--bg-color),white);
+        height: 200vh;
+        width: 100vw;
+      }
+    
+    menu-bar {
+        padding-top: 80px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <!-- Nav-bar -->
+    <nav class="nav-bar">
+        <div class="nav-bar-box">
+            <ul class="nav-bar__list">
+                <li><a href="regions.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">REVIEW</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu-bar -->
+    <div class="menu-bar">
+        <img src="/static/logo.png" alt="로고입니다.">
+
+        <li class="menu-bar-box">
+            <span class="do-name">About Us</span>
+            
+            <ul class="menu-bar-list">
+                <li class="si-name" onclick="location.href='#'">
+                    - 데려갈꼬냥?
+                </li>
+                <li class="si-name" onclick="location.href='#'">
+                    - 도둑코양이
+                </li>
+            </ul>
+            
+        </li>
+
+        <li class="menu-bar-box">
+            <span class="do-name">Guide</span>
+            
+            <ul class="menu-bar-list">
+                <li class="si-name" onclick="location.href='#'">
+                    - 입양 안내
+                </li>
+                <li class="si-name" onclick="location.href='#'">
+                    - 습득시 안내
+                </li>
+            </ul>
+        </li>
+
+
+    <div>
+
+    </div>
+    
+
+    <div class="info-box" style="width: 70rem;">
+            <img class="card-img-top" src="/static/logo.png" alt="로고입니다.">
+            <div class="card-body">
+              <p class="card-text">공고번호가 들어올 자리 ^^</p>
+            </div>
+    </div>
+   
+    <script>
+        //api 데이터에서 도, 시 이름 따오기 -> 미완성//
+        function showDoSinames() {
+            $.ajax({
+                type: "GET",
+                url: "/do-si-name",
+                data: {},
+                success: function (response) {
+                    let articles = response['all_articles']
+                }
+
+
+        //첫 화면에 시 이름 안보이게//
+        $('.menu-bar-list').hide();
+
+        //도 이름을 클릭하면 시 이름이 나타나게//
+        $('.do-name').click(function() {
+            $('.menu-bar-list').each(function (i) { //each(function (i) ????)
+                if ($(this).css('display') == 'block') {
+                    //$(this).hide();
+                    $(this).slideUp('fast');  //
+                }
+            });
+            //$(this).next().show();
+            $(this).next().slideDown('fast');
+        });
+        
+    </script>
+        
+
+    
+
+
+
+    
+    
+</body>
+
+</html>
