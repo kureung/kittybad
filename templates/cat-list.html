@@ -109,75 +109,54 @@
 
     </div>
     
-    <div class="cards-box">
-        <div class="card" style="width: 18rem;" onclick="location.href='#'">
+    <!-- 고양이 카드 박스 -->
+    <div class="catcards-box">
+        <div class="cat-card" style="width: 18rem;" onclick="location.href='#'">
             <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
             <p class="card-text">공고번호가 들어올 자리 ^^</p>
         </div>
-        <div class="card" style="width: 18rem;" onclick="location.href='#'">
+        <div class="cat-card" style="width: 18rem;" onclick="location.href='#'">
             <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
             <p class="card-text">공고번호가 들어올 자리 ^^</p>
         </div>
-        <div class="card" style="width: 18rem;" onclick="location.href='#'">
-            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
-            <p class="card-text">공고번호가 들어올 자리 ^^</p>
-        </div>
-        <div class="card" style="width: 18rem;" onclick="location.href='#'">
-            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
-            <p class="card-text">공고번호가 들어올 자리 ^^</p>
-        </div>
-        <div class="card" style="width: 18rem;" onclick="location.href='#'">
-            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
-            <p class="card-text">공고번호가 들어올 자리 ^^</p>
-        </div>
-        <div class="card" style="width: 18rem;" onclick="location.href='#'">
-            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
-            <p class="card-text">공고번호가 들어올 자리 ^^</p>
-        </div>
-        <div class="card" style="width: 18rem;" onclick="location.href='#'">
-            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
-            <p class="card-text">공고번호가 들어올 자리 ^^</p>
-        </div>
-        <div class="card" style="width: 18rem;" onclick="location.href='#'">
-            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
-            <p class="card-text">공고번호가 들어올 자리 ^^</p>
-        </div>
-        <div class="card" style="width: 18rem;" onclick="location.href='#'">
-            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
-            <p class="card-text">공고번호가 들어올 자리 ^^</p>
-        </div>
-
-
-
-
-
-
-
-
+        
     </div>
    
 <!-- 모달창 -->
-<div class="modal">
+<div class="modal hidden">
     <div class="modal__overlay"></div>
     <div class="modal__content">
-        
+        <img class="modal-img" src="https://www.animal.go.kr/front/fileMng/imageView.do?f=/files/shelter/2021/09/202109251009790.jpg" alt="고양이 이미지">
+        <img class="modal-logo" src="/static/logo.png" alt="데려갈꼬냥?" >
+        <ul>
+            <li>
+                <span class="modal-title">공고번호</span><span class="modal-text">서울-관악-2021-00449</span>
+            </li>
+            <li>
+                <span class="modal-title">색상 / 성별</span><span class="modal-text">삼색 / 암컷</span>
+                <br>
+                <span class="modal-title">나이 / 체중</span><span class="modal-text">2021(년생) / 0.4(kg)</span>
+                <br>
+                <span class="modal-title">특징</span><span class="modal-text">구청신고,탈진,호흡기질환,설사</span>
+                <br>
+                <span class="modal-title">중성화</span><span class="modal-text">아니오</span>
+            </li>
+            <li>
+                <span class="modal-title">관할기관</span><span class="modal-text">서울특별시 관악구</span>
+                <br>
+                <span class="modal-title">보호센터</span><span class="modal-text">러브펫종합동물병원</span>
+                <br>
+                <span class="modal-title">주소</span><span class="modal-text">서울특별시 관악구 남부순환로 1429 (신림동)</span>
+                <br>
+                <span class="modal-title">연락처</span><span class="modal-text">02-837-8875</span>
+            </li>
+        </ul>
     </div>
 </div>
 
     <script>
-        //api 데이터에서 도, 시 이름 따오기 -> 미완성//
-        /* function showDoSinames() {
-            $.ajax({
-                type: "GET",
-                url: "/do-si-name",
-                data: {},
-                success: function (response) {
-                    let articles = response['all_articles']
-                }
-            })}; */
 
-
-        //첫 화면에 시 이름 안보이게//
+        //첫 화면에 시 이름 안보이게
         $('.menu-bar-list').hide();
 
         //도 이름을 클릭하면 시 이름이 나타나게//
@@ -192,6 +171,48 @@
             $(this).next().slideDown('fast');
         });
         
+        
+        /*모달창 기능 jQuery */
+        
+        $(function(){ 
+
+            $(".cat-card").click(function(){
+                    $(".modal").fadeIn('fast');  //cat-card click-> onModal
+            });
+            
+            $(".modal__overlay").click(function(){
+                    $(".modal").fadeOut('fast'); //영역 밖 click-> offModal
+            });
+            });
+
+        /* 모달창 기능 Vanila JS
+        const openButton = document.querySelector('.cat-card'); //onModal button
+        const modal = document.querySelector('.modal'); //html에서의 모달 촤상위 요소
+        const overlay = document.querySelector('.modal__overlay'); //모달창 활성시 배경 흐리게
+
+        const openModal = () => {
+            modal.classList.remove('hidden'); //onModal -> hidden요소가 사라지게. (모달켜짐)
+        }
+        const closeModal = () => {
+            modal.classList.add('hidden'); //offModal -> hidden요소가 다시 등장. (모달꺼짐)
+        }
+
+        openButton.addEventListener('click', openModal); //onModal
+
+        overlay.addEventListener('click',closeModal); //offModal (모달창 영역 밖 클릭) */
+
+
+        /*api 데이터에서 도, 시 이름 따오기 -> 미완성
+         function showDoSinames() {
+            $.ajax({
+                type: "GET",
+                url: "/do-si-name",
+                data: {},
+                success: function (response) {
+                    let articles = response['all_articles']
+                }
+            })}; */
+
     </script>
         
 
