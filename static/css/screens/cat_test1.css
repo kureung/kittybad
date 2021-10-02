@@ -1,69 +1,48 @@
-
 #survey {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    margin-top:50px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 50px;
 }
 
-
-
 .test {
-    max-width: 600px;
-    height: 100vh;
+  max-width: 600px;
+  height: 100vh;
 }
 
 .question_box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 30px;
-    line-height: 1.5;
-    padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  line-height: 1.5;
+  padding-bottom: 30px;
 }
 
 .question_box .number {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .answer {
-    font-size: 17px;
-    line-height: 1.3;
-    padding-bottom: 30px;
+  font-size: 17px;
+  line-height: 1.3;
+  padding-bottom: 30px;
 }
 
 .answer div {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .answer input {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .btn_wrap {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .btn_sort {
-    justify-content: space-between;
+  justify-content: space-between;
 }
-
-button, .submit_btn {
-    width: 100px;
-    height: 40px;
-    padding : 5px;
-    border-style: none;
-    border-radius: 10px;
-    font-size: 20px;
-    background-color: #7f47dd;
-    color: #fff;
-    cursor: pointer;
-}
-
-button:hover, .submit_btn:hover {
-    color: #7f47dd;
-    background-color: #fff;
-}
-
