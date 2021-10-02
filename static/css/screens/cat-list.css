@@ -1,4 +1,4 @@
-.cards-box {
+.catcards-box {
   box-sizing: border-box;
   display: flex;
   position: absolute;
@@ -9,9 +9,10 @@
   left: 250px;
   width: 95vw;
   height: 100vh;
+  font-family: "Pretendard-Regular";
 }
 
-.card {
+.cat-card {
   width: 250px;
   height: 250px;
   padding: 5px;
@@ -36,4 +37,85 @@
 /* 모달창 */
 
 .modal {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+/* 모달창 배경 */
+.modal__overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+}
+
+/* 모달창 내용 */
+.modal__content {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  min-width: 800px;
+  height: 400px;
+  min-height: 400px;
+  top: 20vh;
+  padding: 20px 20px 20px 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Pretendard-Regular";
+  left: 25%; /* 모달창 가운데 정렬이 잘 안됌 */
+}
+
+/* 고양이 이미지 */
+.modal-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* 데려갈꼬냥?로고 */
+.modal-logo {
+  position: absolute;
+  width: 210px;
+  height: 60px;
+  top: 20px;
+  right: 10px;
+}
+
+/* 고양이 정보 내용 */
+.modal__content ul {
+  position: absolute;
+  left: 370px;
+  bottom: 30px;
+}
+
+.modal__content li {
+  margin-bottom: 20px;
+}
+
+.modal__content .modal-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 20px;
+  display: inline-block;
+  width: 80px;
+}
+
+.modal__content .modal-text {
+  font-size: 14px;
+}
+
+/* 로드 된 첫 화면 : 모달창 안보이게*/
+.hidden {
+  display: none;
 }
