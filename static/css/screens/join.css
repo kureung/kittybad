@@ -1,25 +1,23 @@
-.wrap {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.login {
-  width: 30%;
+.join-box_wrap {
+  width: 300px;
   height: 600px;
+  min-width: 310px;
+  min-height: 550px;
   background: white;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-h2 {
-  color: black;
-  font-size: 30px;
+.join-join {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .join_id {
@@ -82,12 +80,12 @@ h2 {
   outline: none;
 }
 
-.submit {
-  margin-top: 50px;
+.join_submit {
+  margin-top: 30px;
   width: 80%;
 }
 
-.submit input {
+.join_submit input {
   width: 100%;
   height: 50px;
   border: 0;
@@ -97,4 +95,11 @@ h2 {
   color: white;
   font-size: 1.2em;
   letter-spacing: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.join_submit input:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: white;
 }
